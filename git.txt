@@ -1,0 +1,107 @@
+Microsoft Windows [Version 10.0.19043.1466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Disk D\cdac\local_repositories>git clone https://github.com/Arcticghost/labtask.git
+Cloning into 'labtask'...
+remote: Enumerating objects: 52, done.
+remote: Counting objects: 100% (52/52), done.
+remote: Compressing objects: 100% (48/48), done.
+remote: Total 52 (delta 19), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (52/52), 1.64 MiB | 3.76 MiB/s, done.
+Resolving deltas: 100% (19/19), done.
+
+C:\Disk D\cdac\local_repositories>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Disk D\cdac\local_repositories>cd labtask
+
+C:\Disk D\cdac\local_repositories\labtask>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Disk D\cdac\local_repositories\labtask>git add hello.html
+
+C:\Disk D\cdac\local_repositories\labtask>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   hello.html
+
+
+C:\Disk D\cdac\local_repositories\labtask>git commit -m "committed file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Asus@LAPTOP-FRCEV6KP.(none)')
+
+C:\Disk D\cdac\local_repositories\labtask>git config --global user.email "pranavpatil7743@gmail.com"
+
+C:\Disk D\cdac\local_repositories\labtask> git config --global user.name "arcticghost"
+
+C:\Disk D\cdac\local_repositories\labtask>git commit -m
+error: switch `m' requires a value
+
+C:\Disk D\cdac\local_repositories\labtask>git commit -m "committed"
+[main 41bfa33] committed
+ 1 file changed, 12 insertions(+)
+ create mode 100644 hello.html
+
+C:\Disk D\cdac\local_repositories\labtask>git push -u origin main
+To https://github.com/Arcticghost/labtask.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Arcticghost/labtask.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Disk D\cdac\local_repositories\labtask>git pull https://github.com/Arcticghost/labtask.git
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 674 bytes | 61.00 KiB/s, done.
+From https://github.com/Arcticghost/labtask
+ * branch            HEAD       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Disk D\cdac\local_repositories\labtask>git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Disk D\cdac\local_repositories\labtask>git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 718 bytes | 718.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Arcticghost/labtask.git
+   d6f0649..d84f030  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Disk D\cdac\local_repositories\labtask>global user
